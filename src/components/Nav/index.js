@@ -1,4 +1,4 @@
-import React, { useEffect } from './node_modules/react';
+import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
@@ -9,14 +9,14 @@ function Nav(props) {
         handlePageChange
     } = props;
 
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
+  // useEffect(() => {
+  //   document.title = capitalizeFirstLetter(currentCategory.name);
+  // }, [currentCategory]);
 
   return (    
       <nav>
         <ul className="flex-row">
-          {pages.map((Category) => (
+          {/* {pages.map((Category) => (
             <li
               className={`mx-5 ${
                 currentPage.name === Category.name && 'navActive'
@@ -29,7 +29,7 @@ function Nav(props) {
                 {capitalizeFirstLetter(Category.name)}
               </span>
             </li>
-          ))}
+          ))} */}
         </ul>
       </nav>
   );

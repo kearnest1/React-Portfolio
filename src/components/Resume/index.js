@@ -1,11 +1,12 @@
-import React from './node_modules/react';
-import DownloadLink from "./node_modules/react-download-link";
+import React from 'react';
+// import DownloadLink from "react-download-link";
+import ResumePdf from "../../assets/resume.pdf";
 
 function Resume() {
         return (
         <section>
 
-            <a href={require("../../assets/resume.pdf")} download>
+            <a href={ResumePdf} download>
                 <button className="resumeDownload">
                     Download Resume
                 </button>

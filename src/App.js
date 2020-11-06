@@ -3,7 +3,8 @@ import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
 import Projects from './components/Projects';
-import ContactForm from './components/Contact';
+import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 
 
@@ -30,15 +31,17 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
       ></Nav>
+      <About></About>
+      <Projects></Projects>
+      <Resume></Resume>
       <main>
-        {!contactSelected ? (
+        {/* {!contactSelected ? (
           <>
             <Projects currentCategory={currentCategory}></Projects>
-            <About></About>
           </>
         ) : (
-          <ContactForm></ContactForm>
-        )}
+          // <ContactForm></ContactForm>
+        )} */}
         <Footer></Footer>
       </main>
     </div>
